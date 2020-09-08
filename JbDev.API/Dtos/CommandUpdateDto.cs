@@ -6,12 +6,8 @@ using System.Threading.Tasks;
 
 namespace JbDev.API.Dtos
 {
-    public class CommandReadDto
+    public class CommandUpdateDto
     {
-        [Required]
-        [MaxLength(250)]
-        public int Id { get; set; }
-
         [Required]
         [MaxLength(250)]
         public string HowTo { get; set; }
@@ -19,6 +15,10 @@ namespace JbDev.API.Dtos
         [Required]
         [MaxLength(250)]
         public string Line { get; set; }
+
+        [Required]
+        [MaxLength(250)]
+        public string Platform { get; set; }
 
     }
 }
