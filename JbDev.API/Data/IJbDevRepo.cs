@@ -8,7 +8,7 @@ namespace JbDev.API.Data
 {
     public interface IJbDevRepo
     {
-        IEnumerable<Command> GetAppCommands();
+        IEnumerable<Command> GetAllCommands();
         Command GetCommandById(int id);
     }
 }

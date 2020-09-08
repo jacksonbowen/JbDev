@@ -1,0 +1,10 @@
+
+
+
+#setup an initial migration
+
+dotnet ef migrations add InitialMigration
+
+#create database
+
+dotnet ef database update

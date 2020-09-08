@@ -8,7 +8,7 @@ namespace JbDev.API.Data
 {
     public class MockJbDevRepo : IJbDevRepo
     {
-        public IEnumerable<Command> GetAppCommands()
+        public IEnumerable<Command> GetAllCommands()
         {
             var commands = new List<Command>
             {
