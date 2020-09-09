@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using JbDev.API.Models;
+﻿using JbDev.API.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace JbDev.API.Data
+namespace JbDev.API.Contexts
 {
     public class JbDevContext : DbContext
     {
@@ -13,7 +9,9 @@ namespace JbDev.API.Data
         {
 
         }
+        //TODO
         //map other models here
+
         public DbSet<Command> Commands { get; set; }
     }
 }
